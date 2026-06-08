@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.sharedflowdemo.ui.theme.SharedFlowDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +27,10 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ScreenSetup(modifier: Modifier = Modifier) {
+fun ScreenSetup(
+    modifier: Modifier = Modifier,
+    viewModel: DemoViewModel = viewModel()
+) {
     MainScreen(modifier)
 }
 
