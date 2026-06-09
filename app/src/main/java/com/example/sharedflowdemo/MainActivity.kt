@@ -69,7 +69,7 @@ fun MainScreen(
     LazyColumn(modifier = modifier) {
         items(messages) {
             Text(
-                "Collected Value = $it",
+                "Собрано значение = $it",
                 style = MaterialTheme.typography.headlineLarge,
                 modifier = Modifier.padding(5.dp)
             )
